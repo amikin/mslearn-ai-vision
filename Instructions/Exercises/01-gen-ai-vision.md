@@ -13,17 +13,24 @@ In this exercise, you use a generative AI model to generate responses to prompts
 
 > **Note**: This exercise is based on pre-release SDK software, which may be subject to change. Where necessary, we've used specific versions of packages; which may not reflect the latest available versions. You may experience some unexpected behavior, warnings, or errors.
 
+While this exercise is based on the OpenAI Python SDK, you can develop AI chat applications using multiple language-specific SDKs; including:
+
+* [OpenAI Projects for Microsoft .NET](https://www.nuget.org/packages/OpenAI)
+* [OpenAI Projects for JavaScript](https://www.npmjs.com/package/openai)
+
+This exercise takes approximately **30** minutes.
+
 This exercise takes approximately **30** minutes.
 
 ## Prerequisites
 
 Before starting this exercise, ensure you have:
 
-- An active [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account)
-- [Visual Studio Code](https://code.visualstudio.com/) installed
-- [Python version 3.13 or higher](https://www.python.org/downloads/) installed
-- [Git](https://git-scm.com/install/) installed and configured
-- [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) installed
+* An active [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account)
+* [Visual Studio Code](https://code.visualstudio.com/) installed
+* [Python version 3.13 or higher](https://www.python.org/downloads/) installed
+* [Git](https://git-scm.com/install/) installed and configured
+* [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) installed
 
 ## Create a Microsoft Foundry project
 
@@ -32,10 +39,10 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com` and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the Foundry logo at the top left to navigate to the home page.
 
 1. If it is not already enabled, in the tool bar the top of the page, enable the **New Foundry** option. Then, if prompted, create a new project with a unique name; expanding the **Advanced options** area to specify the following settings for your project:
-    - **Foundry resource**: *Use the default name for your resource (usually {project_name}-resource)*
-    - **Subscription**: *Your Azure subscription*
-    - **Resource group**: *Create or select a resource group*
-    - **Region**: Select any available region
+    * **Foundry resource**: *Use the default name for your resource (usually {project_name}-resource)*
+    * **Subscription**: *Your Azure subscription*
+    * **Resource group**: *Create or select a resource group*
+    * **Region**: Select any available region
 
 1. Select **Create**. Wait for your project to be created.
 1. On the home page for your project, note the project endpoint, key, and OpenAI endpoint.
@@ -96,10 +103,10 @@ The initial application files you'll need to develop the translation application
 
 1. In the VS Code Explorer pane, review the files in the folder:
 
-    - `.env` - A configuration file for application settings.
-    - `image-chat-app.py` - The Python code file for the image application.
-    - `requirements.txt` - A file listing the package dependencies.
-    - `mystery-fruit.jpeg` - An image of a fruit.
+    * `.env` - A configuration file for application settings.
+    * `image-chat-app.py` - The Python code file for the image application.
+    * `requirements.txt` - A file listing the package dependencies.
+    * `mystery-fruit.jpeg` - An image of a fruit.
 
 1. In the **Explorer** pane, in the **python** folder, select the **.env** file to open it. Then update the configuration values to include the **Azure OpenAI endpoint** for your Foundry resource, and the model deployment name for the generative AI model you deployed.
 
