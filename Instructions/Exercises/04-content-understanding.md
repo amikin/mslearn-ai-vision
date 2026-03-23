@@ -89,24 +89,17 @@ Now that you have a Foundry project, you can deploy the AI models needed for con
 
     Then return to the Content Understanding project, and upload the **lion.jpg** file to the project.
 
-1.
-1.
+1.When prompted to choose a template, select **Image Analysis** and ensure the schema is set to **Start from Scratch**. Then save the project.
 
-## Try a pre-built image analyzer in the Content Understanding Studio
+1. After the image has been uploaded, in the **Schema** pane, use the **Add new field** to add the following fields to the schema:
 
-1. Select **Home** from the upper-right of the page to navigate to the homepage.
+    | Field Name | Field Descriptopn | Value type | Method |
+    |--|--|--|--|
+    | `Description` | `Image description` | String | Generate |
+    | `Tags` | `Image tags` | List of Strings | Generate |
 
-    The **Get started with Content Understanding** page will appear with options to analyze different types of content.
-
-1. Select **Explore all pre-built analyzers**.
-
-    A list of pre-built analyzers will appear. These analyzers are designed to extract structured information from different types of content, such as documents, images, audio, and video.
-
-1. Select **Modality** from the filter options, and then select **Image**.
-
-1. Select **Try it** on the **Image search** analyzer.
-
-    Observe the sample image analysis results. The analyzer generates a summary of the image content, identifying objects and concepts in the image. The JSON result is also available. You can also try uploading your own images to see the generated descriptions.
+1. Save the changes to the schema.
+1. Select **Run analysis** to run the analyzer on the image, and review the fields that are generated; which should include an accurate description and a collection of relevant tags for the image.
 
 ## Create an image analyzer application
 
